@@ -1,0 +1,666 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 249, 249);
+    height: 4000px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(213, 152, 253, 0.8);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.fa-house {
+    font-size: 25px;
+    color: white;
+    cursor: pointer; 
+    margin-left: 25px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 180px;
+    font-size: 14px;
+}
+
+.header-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    float: left;
+}
+
+
+
+.header-links{
+    list-style: none;
+    float: right;
+    margin: 15px; 
+    margin-right: 25px;
+}
+
+.header-links .nab-link {
+    display: inline;
+    margin: 0 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-left: 10px; 
+}
+
+.header-links li {
+    display: inline-block;
+}
+
+.header-links li a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    position: relative;
+}
+
+.nab-link::after {
+    content: "";
+    height: 3px;
+    background-color: rgb(100, 11, 151);
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: -7px;
+    transition: width 0.2s ease;
+}
+.nab-link:hover::after {
+    width: 100%;
+    transition: 0.4s
+}
+
+.home-creative {
+    background-image: url(../img/perfume-with-floral-aroma-burst-generative-ai_74760-5026.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    top: 50px;
+    padding-top: 50px;
+}
+
+.home-creative-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 230px;
+}
+
+.home-creative-tittle {
+    color: white;
+    font-size: 65px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.home-creative-p1 {
+    color: rgba(255, 255, 255, 0.877);
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.home-creative-btu {
+    width: 130px;
+    height: 55px;
+    border-radius: 15px; 
+    border: 0;
+    font-size: 20px;
+    text-transform:capitalize ;
+    opacity: 1;
+}
+
+.home-creative-btu2 {
+    background-color: rgb(75, 75, 255);
+    color: #ffffff;
+}
+
+.home-creative-btu:hover {
+    opacity: 0.3;
+}
+
+
+.welcome {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.welcome-title {
+    text-transform: capitalize;
+    font-size: 40px; 
+    margin-bottom: 65px;
+}
+
+.welcome-tittle-line {
+    width: 90px;
+    height: 4px;
+    display: block;
+    background-color: rgb(105, 105, 255);
+    text-align: center;
+    margin: auto;
+    margin-top: -55px;
+    margin-bottom: 80px;
+}
+
+.welcome-contanier {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.welcome-iteam {
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 20px  20px;
+    text-align: center;
+    border: 1px solid rgba(98, 98, 255, 0.932);
+    border-radius: 5%;
+    margin-bottom: 200px;
+}
+.welcome-iteam::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0; 
+    background-color: rgb(70, 68, 175);
+    opacity: 0;
+    
+} 
+
+.welcome-iteam:hover::before {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    overflow: hidden; 
+}
+.welcome-iteam:hover .welcome-info-title {
+    color: rgb(85, 85, 202);
+}
+
+.welcome-iteam:hover .welcome-info-p{
+    color: #000;
+}
+
+.welcome-iteam:hover .welcome-info-but{
+    background-color: transparent;
+}  
+
+
+.iteam2 {
+    margin: 0px  5%; 
+}
+
+.icons {
+    font-size: 30px;
+    color: rgba(105, 105, 255,1);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.welcome-info {
+    margin: 15px 0;
+}
+
+.welcome-info-title {
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.welcome-info-p {
+    margin: 15px 0;
+    color: rgb(128, 128, 128);
+    text-transform: capitalize;
+    width: 100%;
+    padding-bottom: 15px ;
+    box-sizing: border-box;
+}
+
+.welcome-info-but {
+    border: 0;
+    text-transform: capitalize;
+    color: rgb(70, 70, 247);
+    cursor: pointer;
+    background-color: #ffffff;
+    font-weight: 650;
+    font-size: 15px;
+}
+
+.featured{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    margin-top: 540px;
+    background-color: rgb(238, 238, 238);
+    padding: 50px 0; 
+    box-sizing: border-box;
+}
+
+.featured-tittle {
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+}
+
+.featured-tittle-line {
+    width: 90px;
+    height: 4px;
+    display: block;
+    background-color: rgb(105, 105, 255);
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.featured-container {
+    width: 80%;
+    margin: auto;
+}
+.featured-iteam {
+    width: 30%;
+    height: 200px;  
+    background-size: cover;   
+    background-position: center;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.featured-iteam-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease,
+}
+
+.featured-iteam:hover .featured-iteam-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.featured-container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.featured-iteam-overlay h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.featured-iteam-overlay p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.featured-iteam-overlay .featured-icons i {
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.featured-iteam1 {
+    background-image: url(../img/laura-chouette-jmACQEf7T2A-unsplash-large-teaser.webp);
+    /* margin-left: 80px;  */
+}
+
+.featured-iteam2 {
+    background-image: url(../img/perfume-with-floral-aroma-burst-generative-ai_74760-4858.jpg);
+    margin: 0 5%;
+}
+.featured-iteam3 {
+    background-image: url(../img/OIP\ \(2\).webp);
+}
+.featured-iteam4 {
+    background-image: url(../img/flower.jpg);
+}
+.featured-iteam5 {
+    background-image: url(../img/elegant-vegan-alcohol-arrangement_23-2149337694.jpg);
+    margin: 0 5%;
+}
+.featured-iteam6 {
+    background-image: url(../img/ecofriendly-beauty-product_23-2150669137.jpg);
+}
+
+.km {
+    margin-top: 30px;
+}
+
+.offer {
+    margin-top: 95px;
+}
+.offer-title {
+    margin: auto ;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.offer-tittle-line{
+    width: 90px;
+    height: 4px;
+    display: block;
+    background-color: rgb(105, 105, 255);
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.offer-contanier {
+    width:80% ;
+    margin: auto;
+}
+.offer-iteam {
+    position: relative;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid rgb(144, 144, 255);
+    float: left;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px;
+    overflow: hidden; 
+}
+
+.offer-iteam::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: rgb(28, 6, 126);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.offer-iteam:hover::before {
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.offer-iteam i {
+    color: rgb(93, 93, 233);
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: block; 
+    position: relative;
+    z-index: 1;
+}
+
+.offer-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+    padding: 10px 0;
+}
+
+.offer-p {
+    color: rgb(160, 159, 159);
+    text-transform: capitalize;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.offer-iteam:hover .offer-text{
+    color: rgb(62, 62, 253);
+}
+
+.offer-iteam:hover .offer-p {
+    color: #000;
+}
+
+.why {
+    margin-top: 700px;
+    width: 80%;
+    margin-left: 100px ;
+}
+.why-tittle {
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 700;
+}
+
+.why-tittle-line {
+    width: 90px;
+    height: 4px;
+    display: block;
+    background-color: rgb(105, 105, 255);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.why-p {
+    margin: 25px 0;
+    color: rgb(158, 158, 158);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.why-list{
+    font-size: 20px;
+    color: rgb(158, 158, 158);
+    margin-bottom: 20px;
+    margin-left: 25px ;
+}
+
+.choose-us {
+    /* margin-left: 100px; */
+    padding: 60px 0;
+    background: #fff;
+    margin-top: 700px;
+}
+
+.choose-us .container {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  /* flex-wrap: wrap; responsive */
+}
+
+
+ .choose-text .choose-title {
+    font-size: 42px;
+    font-weight: 900PX; 
+    margin-bottom: 10px; 
+
+}
+.choose-underline-tittle {
+    width: 75px;
+    height: 4px;
+    display: block;
+    background-color: #5d5ddc;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.choose-text .choose-p1 {
+    text-transform:lowercase;
+    margin-top: 35px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.choose-text ul {
+    list-style: none;
+}
+
+.choose-text ul li {
+    margin: 30px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+.choose-text ul li i {
+    color: #5d5ddc;
+    margin-right: 8px;
+}
+
+.choose-img {
+    flex: 1;
+    text-align: center;
+}
+
+.choose-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.dots {
+    margin-top: 10px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #5d5ddc;
+} 
+
+.photo{
+    background-image: url(../img/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.photo .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.icon {
+text-align: center;
+color: white;
+margin:150px 30px 0 ;
+i{
+    font-size: 35px;
+    color: rgb(96, 96, 248);
+    margin: 15px 0;
+}
+}
+
+.footer {
+  background-color: #b8b8d6; /* اللون الموف */
+  padding: 50px 0;
+}
+
+.footer-img img {
+  width: 250px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background-color: #7a7ad6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #5a5ac9;
+  transform: scale(1.1);
+}
